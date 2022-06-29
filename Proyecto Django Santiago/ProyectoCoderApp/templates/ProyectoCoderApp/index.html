@@ -1,0 +1,32 @@
+{% extends 'ProyectoCoderApp/base.html' %}
+{% load static %}
+
+{% block tituloPagina %}
+Inicio - AppCoder
+{% endblock %}
+
+{% block contenidoPagina %}
+
+<!-- Header-->
+<header class="bg-success py-5">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-9">
+                <div class="text-center my-5">
+                    <h1 class="display-5 fw-bolder text-white mb-2">Bienvenido a la pagina principal de AppCoder</h1>
+                    <p class="lead text-white-50 mb-6">Aquí encontrará herramientas para crear y ver nuestras listas de Cursos, Estudiantes y Profesores. </p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <a class="btn btn-dark btn-lg px-4 me-sm-3" href="crear_curso">Crear Curso</a>
+                        <a class="btn btn-dark btn-lg px-4 me-sm-3" href="crear_estudiante">Ingresar Estudiante</a>
+                        <a class="btn btn-dark btn-lg px-4 me-sm-3" href="crear_profesor">Ingresar Profesor</a>
+                        
+                    </div>
+                    <br><br>
+                    <a class="btn btn-dark btn-lg px-4 me-sm-3" href="buscar_comision">Buscar comisión</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock %}
